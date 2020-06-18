@@ -1,0 +1,10 @@
+language: python
+services: docker
+
+before_script:
+  - docker pull gcr.io/kaniko-project/executor:latest
+  - docker images
+script:
+  - echo "kuda"
+after_script:
+  - docker images
