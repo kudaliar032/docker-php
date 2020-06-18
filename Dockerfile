@@ -1,4 +1,4 @@
-FROM php:7.4-fpm-alpine
+FROM php:5.6-fpm-alpine
 
 # install system dependencies
 RUN apk add --no-cache git \
@@ -16,4 +16,4 @@ RUN apk add --no-cache --virtual .build-deps autoconf gcc g++ make linux-headers
   composer global require hirak/prestissimo --no-plugins --no-scripts
 
 # set working directory
-WORKDIR /app/www
+WORKDIR /app
