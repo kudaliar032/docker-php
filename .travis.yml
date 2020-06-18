@@ -2,8 +2,8 @@ language: python
 services: docker
 
 before_script:
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker pull gcr.io/kaniko-project/executor:latest
-  - docker images
 script:
   - echo "test travis"
 after_script:

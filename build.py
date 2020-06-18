@@ -12,4 +12,4 @@ for version in php_versions:
   for variant in variants:
     dockerfile_path = path.join('output/{}/{}'.format(version, variant))
     tag = 'kudaliar032/php:{}-{}'.format(version, variant)
-    client.containers.run('gcr.io/kaniko-project/executor:latest')
+    client.containers.run('gcr.io/kaniko-project/executor:latest', )
