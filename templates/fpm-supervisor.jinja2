@@ -4,7 +4,7 @@ FROM php:{{ php_version }}-fpm-alpine
 RUN apk add --no-cache git \
   icu-dev \
   libpng-dev \
-  libzip \
+  libzip-dev \
   supervisor
 
 # install PHP extensions, composer, and hirak/prestissimo
