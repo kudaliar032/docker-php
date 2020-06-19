@@ -1,4 +1,5 @@
 #!/bin/bash
+set -Eeuo pipefail
 set -x
 python generate.py
 BASE_PATH=$(pwd)
