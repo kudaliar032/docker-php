@@ -14,7 +14,7 @@ def jinja2_generator(template_name, **kwargs):
 
 
 if __name__ == '__main__':
-  php_versions = [7.2]  # render php versions
+  php_versions = [7.1, 7.2, 7.3, 7.4]  # render php versions
   templates = listdir(path.join('templates'))
   for template in templates:
     rmtree('output') if path.exists('output') else print('output path created')

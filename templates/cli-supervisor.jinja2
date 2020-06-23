@@ -1,4 +1,4 @@
-FROM php:{{ php_version }}-fpm-alpine
+FROM php:{{ php_version }}-cli-alpine
 
 # install system dependencies
 RUN apk add --no-cache git \
